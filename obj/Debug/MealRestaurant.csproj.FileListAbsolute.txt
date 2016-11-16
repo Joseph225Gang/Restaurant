@@ -1,0 +1,50 @@
+c:\users\michael\documents\visual studio 2013\Projects\MealRestaurant\bin\Debug\MealRestaurant.exe.config
+c:\users\michael\documents\visual studio 2013\Projects\MealRestaurant\bin\Debug\MealRestaurant.exe
+c:\users\michael\documents\visual studio 2013\Projects\MealRestaurant\bin\Debug\MealRestaurant.pdb
+c:\users\michael\documents\visual studio 2013\Projects\MealRestaurant\obj\Debug\MealRestaurant.csprojResolveAssemblyReference.cache
+c:\users\michael\documents\visual studio 2013\Projects\MealRestaurant\obj\Debug\MealRestaurant.Form1.resources
+c:\users\michael\documents\visual studio 2013\Projects\MealRestaurant\obj\Debug\MealRestaurant.Properties.Resources.resources
+c:\users\michael\documents\visual studio 2013\Projects\MealRestaurant\obj\Debug\MealRestaurant.csproj.GenerateResource.Cache
+c:\users\michael\documents\visual studio 2013\Projects\MealRestaurant\obj\Debug\MealRestaurant.exe
+c:\users\michael\documents\visual studio 2013\Projects\MealRestaurant\obj\Debug\MealRestaurant.pdb
+c:\users\michael\documents\visual studio 2013\Projects\MealRestaurant\bin\Debug\EntityFramework.dll
+c:\users\michael\documents\visual studio 2013\Projects\MealRestaurant\bin\Debug\EntityFramework.xml
+c:\users\michael\documents\visual studio 2013\Projects\MealRestaurant\bin\Debug\zh-Hant\EntityFramework.resources.dll
+D:\c sharp\Visual Studio 2015\MealRestaurant\bin\Debug\MealRestaurant.exe.config
+D:\c sharp\Visual Studio 2015\MealRestaurant\obj\Debug\MealRestaurant.exe
+D:\c sharp\Visual Studio 2015\MealRestaurant\obj\Debug\MealRestaurant.pdb
+D:\c sharp\Visual Studio 2015\MealRestaurant\bin\Debug\MealRestaurant.exe
+D:\c sharp\Visual Studio 2015\MealRestaurant\bin\Debug\MealRestaurant.pdb
+D:\c sharp\Visual Studio 2015\MealRestaurant\bin\Debug\EntityFramework.dll
+D:\c sharp\Visual Studio 2015\MealRestaurant\bin\Debug\EntityFramework.xml
+D:\c sharp\Visual Studio 2015\MealRestaurant\bin\Debug\zh-Hant\EntityFramework.resources.dll
+D:\c sharp\Visual Studio 2015\MealRestaurant\obj\Debug\MealRestaurant.csprojResolveAssemblyReference.cache
+D:\c sharp\Visual Studio 2015\MealRestaurant\obj\Debug\MealRestaurant.Form1.resources
+D:\c sharp\Visual Studio 2015\MealRestaurant\obj\Debug\MealRestaurant.Properties.Resources.resources
+D:\c sharp\Visual Studio 2015\MealRestaurant\obj\Debug\MealRestaurant.csproj.GenerateResource.Cache
+D:\c sharp\Visual Studio 2015\MealRestaurant\bin\Debug\DataGridViewNumericUpDownElements.dll
+D:\c sharp\Visual Studio 2015\MealRestaurant\bin\Debug\DataGridViewNumericUpDownElements.pdb
+D:\c sharp\Visual Studio 2015\MealRestaurant\obj\Debug\MealRestaurant.StartUpForm.resources
+D:\c sharp\Visual Studio 2015\MealRestaurant\obj\Debug\MealRestaurant.RestaurantBackenedLogin.resources
+D:\c sharp\Visual Studio 2015\MealRestaurant\obj\Debug\MealRestaurant.RestaurantBackenedManager.resources
+D:\c sharp\Visual Studio 2015\MealRestaurant\bin\Debug\Newtonsoft.Json.dll
+D:\c sharp\Visual Studio 2015\MealRestaurant\bin\Debug\Newtonsoft.Json.xml
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\bin\Debug\MealRestaurant.exe.config
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\obj\Debug\MealRestaurant.exe
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\obj\Debug\MealRestaurant.pdb
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\obj\Debug\MealRestaurant.csprojResolveAssemblyReference.cache
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\obj\Debug\MealRestaurant.Form1.resources
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\obj\Debug\MealRestaurant.Properties.Resources.resources
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\obj\Debug\MealRestaurant.RestaurantBackenedLogin.resources
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\obj\Debug\MealRestaurant.RestaurantBackenedManager.resources
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\obj\Debug\MealRestaurant.StartUpForm.resources
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\obj\Debug\MealRestaurant.csproj.GenerateResource.Cache
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\bin\Debug\MealRestaurant.exe
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\bin\Debug\MealRestaurant.pdb
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\bin\Debug\DataGridViewNumericUpDownElements.dll
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\bin\Debug\EntityFramework.dll
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\bin\Debug\Newtonsoft.Json.dll
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\bin\Debug\DataGridViewNumericUpDownElements.pdb
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\bin\Debug\EntityFramework.xml
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\bin\Debug\Newtonsoft.Json.xml
+D:\c sharp\Visual Studio 2015\MealRestaurantTest\bin\Debug\zh-Hant\EntityFramework.resources.dll
