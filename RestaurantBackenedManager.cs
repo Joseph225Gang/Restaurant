@@ -19,7 +19,7 @@ namespace MealRestaurant
         private void RestaurantBackenedManager_Load(object sender, EventArgs e)
         {
             //更新listManager裡的items
-            ReNewMealItem();
+            MealPageRefresh();
 
             //將category加到combox裡
             Object[] category = new Object[restaurant.mealModel.mealFoodList.Keys.Count];
@@ -39,7 +39,7 @@ namespace MealRestaurant
         /// 2:Deserialize json檔到mealModel物件裡
         /// 3:將json檔到mealModel物件裡mealFoodList集合的所有物件都讀到listManager(listbox)裡
         /// </summary>
-        private void ReNewMealItem()
+        private void MealPageRefresh()
         {
             //1
             tabMeal.SelectedTab.Controls.Add(listManager);
@@ -126,7 +126,7 @@ namespace MealRestaurant
         {
             restaurant.mealModel.mealFoodList.Add(tboName.Text, new List<Meal>());
             restaurant.WriteJson();
-            ReNewCategoryItem();
+            CategoryPageRefresh();
         }
 
         private void AddMeal()
@@ -139,7 +139,7 @@ namespace MealRestaurant
                 MealImgPos = tboPath.Text
             });
             restaurant.WriteJson();
-            ReNewMealItem();
+            MealPageRefresh();
         }
 
         private void EditCategory()
@@ -152,7 +152,7 @@ namespace MealRestaurant
                 restaurant.mealModel.mealFoodList.Remove(text);
                 restaurant.mealModel.mealFoodList.Add(tboName.Text, mealList);
                 restaurant.WriteJson();
-                ReNewCategoryItem();
+                CategoryPageRefresh();
             }
             catch (Exception ex)
             {
@@ -171,7 +171,7 @@ namespace MealRestaurant
                 restaurant.mealModel.mealFoodList[pos][((RestaurantBackened)restaurant).GetStartPoint(listManager.SelectedIndex, listManager)].MealImgPos = tboPath.Text;
                 restaurant.WriteJson();
                 MessageBox.Show("存檔成功");
-                ReNewMealItem();
+                MealPageRefresh();
             }
             catch (Exception ex)
             {
@@ -195,7 +195,7 @@ namespace MealRestaurant
                 restaurant.mealModel.mealFoodList[pos].RemoveAt(((RestaurantBackened)restaurant).GetStartPoint(listManager.SelectedIndex,listManager));
                 restaurant.WriteJson();
                 //更新listManager的items
-                ReNewMealItem();
+                MealPageRefresh();
             }
             //2
             else
@@ -206,7 +206,7 @@ namespace MealRestaurant
                     restaurant.mealModel.mealFoodList.Remove(listManager.SelectedItem.ToString());
                     restaurant.WriteJson();
                     //更新listManager的items
-                    ReNewCategoryItem();
+                    CategoryPageRefresh();
                 }
             }           
         }
@@ -235,13 +235,13 @@ namespace MealRestaurant
             //tabPage的index為meal時
             if (tabMeal.SelectedIndex == 0)
             {
-                ReNewMealItem();
+                MealPageRefresh();
                 ControlPosReChange();
             }
             //tabPage的index為category時 
             else if (tabMeal.SelectedIndex == 1)
             {
-                ReNewCategoryItem();
+                CategoryPageRefresh();
                 ControlPosChange();
             }          
         }
@@ -252,7 +252,7 @@ namespace MealRestaurant
         /// 2:Deserialize json檔的資料到mealModel物件裡
         /// 3:將mealModel物件裡的mealFoodList集合的key都讀到listManager裡
         /// </summary>
-        private void ReNewCategoryItem()
+        private void CategoryPageRefresh()
         {
             //1
             tabMeal.SelectedTab.Controls.Add(listManager);
@@ -273,7 +273,7 @@ namespace MealRestaurant
         private void ControlPosChange()
         {
             gboManager.Text = BackenedOption.EditCategory;
-            btnAdd.Text = "Add Category";
+            btnAdd.Text = BackenedOption.AddCategory;
             btnDelete.Text = "Delete Selected Category";
             label1.Text = "Category Name";
             label6.Text = "Meal Using this category";
