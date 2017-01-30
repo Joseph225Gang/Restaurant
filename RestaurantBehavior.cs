@@ -3,7 +3,7 @@ using System.IO;
 
 namespace MealRestaurant
 {
-    public class RestaurantBehavior
+    public abstract class RestaurantBehavior
     {
         public Model mealModel { get; set; }
         public string projectPath = Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory()));

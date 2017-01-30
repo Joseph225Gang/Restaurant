@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MealRestaurant.Form1" Collapsed="true">
+    <Position X="5.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBCQiCQACHAMAGKIAISAKhEDgglGqEEBEAQCACARAAU=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MealRestaurant.Meal" Collapsed="true">
+    <Position X="7" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAKAAAAAAAEAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Meal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MealRestaurant.Model" Collapsed="true">
+    <Position X="8.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MealRestaurant.RestaurantBackened">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAgAAAAAAAAAAAAAg=</HashCode>
+      <FileName>RestaurantBackened.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MealRestaurant.RestaurantBackenedLogin" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACGAAAAAAAACAAAASAAAACgAAQAAAAAFAAAA=</HashCode>
+      <FileName>RestaurantBackenedLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MealRestaurant.RestaurantBackenedManager" Collapsed="true">
+    <Position X="7" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFABJCgBQCYAABAAAACASAADAQAAiTCABAWAAAIBAQY=</HashCode>
+      <FileName>RestaurantBackenedManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MealRestaurant.RestaurantBehavior">
+    <Position X="1.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>RestaurantBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MealRestaurant.RestaurantFront">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAABAAAEAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>RestaurantFront.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MealRestaurant.SingletonForm&lt;T&gt;" Collapsed="true">
+    <Position X="8.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCA=</HashCode>
+      <FileName>SingletonForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MealRestaurant.StartUpForm" Collapsed="true">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAAAAAgACAAAACICAAgABAAAAAAAEAEAA=</HashCode>
+      <FileName>StartUpForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

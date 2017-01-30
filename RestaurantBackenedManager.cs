@@ -19,7 +19,7 @@ namespace MealRestaurant
         private void RestaurantBackenedManager_Load(object sender, EventArgs e)
         {
             //更新listManager裡的items
-            reNewTabPageContext();
+            MealPageRefresh();
 
             //將category加到combox裡
             Object[] category = new Object[restaurant.mealModel.mealFoodList.Keys.Count];
@@ -39,7 +39,7 @@ namespace MealRestaurant
         /// 2:Deserialize json檔到mealModel物件裡
         /// 3:將json檔到mealModel物件裡mealFoodList集合的所有物件都讀到listManager(listbox)裡
         /// </summary>
-        private void reNewTabPageContext()
+        private void MealPageRefresh()
         {
             //1
             tabMeal.SelectedTab.Controls.Add(listManager);
@@ -79,7 +79,7 @@ namespace MealRestaurant
         /// </summary>
         private void CategoryIndexChanged()
         {
-            gboManager.Text = "Edit Category";
+            gboManager.Text = BackenedOption.EditCategory;
             tboName.Text = listManager.SelectedItem.ToString();
             string category = "";
             for (int i = 0; i < restaurant.mealModel.mealFoodList[tboName.Text].Count; i++)
@@ -96,7 +96,7 @@ namespace MealRestaurant
         /// </summary>
         private void MealIndexChanged()
         {
-            gboManager.Text = "Edit Meal";
+            gboManager.Text = BackenedOption.EditMeal;
             string name = listManager.SelectedItem.ToString();
             tboName.Text = name;
             string pos = ((RestaurantBackened)restaurant).GetCategory(listManager);
@@ -108,11 +108,11 @@ namespace MealRestaurant
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (gboManager.Text.Equals("Edit Meal"))
+            if (gboManager.Text.Equals(BackenedOption.EditMeal))
                 EditMeal();
-            else if (gboManager.Text.Equals("Add New Meal"))
+            else if (gboManager.Text.Equals(BackenedOption.AddNewMeal))
                 AddMeal();
-            else if (gboManager.Text.Equals("Edit Category"))
+            else if (gboManager.Text.Equals(BackenedOption.EditCategory))
                 EditCategory();
             else
                 AddCategory();
@@ -126,7 +126,7 @@ namespace MealRestaurant
         {
             restaurant.mealModel.mealFoodList.Add(tboName.Text, new List<Meal>());
             restaurant.WriteJson();
-            ReNewTabCategory();
+            CategoryPageRefresh();
         }
 
         private void AddMeal()
@@ -139,7 +139,7 @@ namespace MealRestaurant
                 MealImgPos = tboPath.Text
             });
             restaurant.WriteJson();
-            reNewTabPageContext();
+            MealPageRefresh();
         }
 
         private void EditCategory()
@@ -152,7 +152,7 @@ namespace MealRestaurant
                 restaurant.mealModel.mealFoodList.Remove(text);
                 restaurant.mealModel.mealFoodList.Add(tboName.Text, mealList);
                 restaurant.WriteJson();
-                ReNewTabCategory();
+                CategoryPageRefresh();
             }
             catch (Exception ex)
             {
@@ -171,7 +171,7 @@ namespace MealRestaurant
                 restaurant.mealModel.mealFoodList[pos][((RestaurantBackened)restaurant).GetStartPoint(listManager.SelectedIndex, listManager)].MealImgPos = tboPath.Text;
                 restaurant.WriteJson();
                 MessageBox.Show("存檔成功");
-                reNewTabPageContext();
+                MealPageRefresh();
             }
             catch (Exception ex)
             {
@@ -195,7 +195,7 @@ namespace MealRestaurant
                 restaurant.mealModel.mealFoodList[pos].RemoveAt(((RestaurantBackened)restaurant).GetStartPoint(listManager.SelectedIndex,listManager));
                 restaurant.WriteJson();
                 //更新listManager的items
-                reNewTabPageContext();
+                MealPageRefresh();
             }
             //2
             else
@@ -206,7 +206,7 @@ namespace MealRestaurant
                     restaurant.mealModel.mealFoodList.Remove(listManager.SelectedItem.ToString());
                     restaurant.WriteJson();
                     //更新listManager的items
-                    ReNewTabCategory();
+                    CategoryPageRefresh();
                 }
             }           
         }
@@ -215,7 +215,7 @@ namespace MealRestaurant
         {
             if (tabMeal.SelectedIndex == 0)
             {
-                gboManager.Text = "Add New Meal";
+                gboManager.Text = BackenedOption.AddNewMeal;
                 tboDescription.Text = "";
                 tboName.Text = "";
                 tboPrice.Text = "";
@@ -226,7 +226,7 @@ namespace MealRestaurant
             {
                 tboDescription.Text = "";
                 tboName.Text = ""; 
-                gboManager.Text = "Add Category";
+                gboManager.Text = BackenedOption.AddCategory;
             }
         }
 
@@ -235,13 +235,13 @@ namespace MealRestaurant
             //tabPage的index為meal時
             if (tabMeal.SelectedIndex == 0)
             {
-                reNewTabPageContext();
+                MealPageRefresh();
                 ControlPosReChange();
             }
             //tabPage的index為category時 
             else if (tabMeal.SelectedIndex == 1)
             {
-                ReNewTabCategory();
+                CategoryPageRefresh();
                 ControlPosChange();
             }          
         }
@@ -252,7 +252,7 @@ namespace MealRestaurant
         /// 2:Deserialize json檔的資料到mealModel物件裡
         /// 3:將mealModel物件裡的mealFoodList集合的key都讀到listManager裡
         /// </summary>
-        private void ReNewTabCategory()
+        private void CategoryPageRefresh()
         {
             //1
             tabMeal.SelectedTab.Controls.Add(listManager);
@@ -272,8 +272,8 @@ namespace MealRestaurant
         /// </summary>
         private void ControlPosChange()
         {
-            gboManager.Text = "Edit Category";
-            btnAdd.Text = "Add Category";
+            gboManager.Text = BackenedOption.EditCategory;
+            btnAdd.Text = BackenedOption.AddCategory;
             btnDelete.Text = "Delete Selected Category";
             label1.Text = "Category Name";
             label6.Text = "Meal Using this category";
@@ -300,7 +300,7 @@ namespace MealRestaurant
         /// </summary>
         private void ControlPosReChange()
         {
-            gboManager.Text = "Edit Meal";
+            gboManager.Text = BackenedOption.EditMeal;
             btnAdd.Text = "Add Meal";
             btnDelete.Text = "Delete Selected Meal";
             label1.Text = "Meal Name (*)";
